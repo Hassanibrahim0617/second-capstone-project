@@ -1,0 +1,150 @@
+/* style navbar start*/
+nav{display: flex;
+    background-color:rgba(25,57, 90,0.5);
+    justify-content: space-around;
+align-items: center;
+padding: 10px;
+max-width: 100%;}
+
+.logo img{max-width:20%;  
+    margin-right:10px;
+}
+
+.main{background-color:rgba(25,57, 90,0.5);}
+.href ul li{display: inline;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.href ul{list-style-type:none;
+margin: 0;}
+.href li{list-style: none;
+}
+.href ul li a{color:#fd7e14 ;
+font-size: 15px;
+font-weight:200;
+margin-right: 10px;
+text-decoration: none;
+text-transform: capitalize;
+}
+.href ul li a:hover{color: #0dcaf0;
+   }
+
+   /* .hamburger{display: block;
+    float: left;
+    margin-left: 10px;
+cursor: pointer;}
+ */
+
+
+.hamburger div{background-color:#20c997;
+width: 15px;
+height: 5px;
+margin: 5px;
+display:flex;
+}
+
+@media screen and (max-width:1048px){
+    .logo{
+        padding-left: 50px;
+
+}
+href ul{margin-right: 20px;}
+
+href a{font-size: 17px;}
+}
+
+@media screen and (max-width:760px){
+.logo{margin-left: 20px;}
+
+    .href{
+        position: absolute;
+        right: 0;
+        height: 100%;
+        top: 10px;
+        
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        /* transform: translateX(100%);
+        transition: transform 0.5s ease-in; */
+    }
+    .href li{display: block;
+        margin: 30px 0;
+        opacity: 0;
+    }
+    .href a{font-size: 20px;
+    }
+    a:hover{color: #0dcaf0;
+    }
+href ul show{
+    left: 0;
+}
+    .hamburger{margin-right: 5px;
+        display: block;
+    }
+    .hamburger:hover{color: #0dcaf0;
+    }
+}
+.nav-active{transform: translateX(0%);}
+
+@keyframes navhref{
+    from{
+        opacity: 0;
+        transform:translateX(50px);
+        }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+       }
+                  }
+
+.toggle .line1{
+transform: rotate(-45deg translate(-5px, 6px))
+};
+
+.toggle .line2{opacity: 0;}
+
+.toggle .line3{
+    transform: rotate(-45deg translate(-5px, 6px))
+}
+
+/* style navbar end*/
+
+/* body styling start */
+.container-style{background-color:#dc3545 ;}
+
+.source{max-width: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family:'Oswald';
+    -webkit-background-clip: text;
+color: #198754;
+text-decoration: underline;
+margin: 50px auto;
+text-align: center;
+
+}
+.source:hover{color: #adb5bd;
+}
+/* body styling end */
+
+/* form start */
+.project{background-color:#adb5bd;
+    color: #0d6efd;
+max-width: 80%;
+border: 2px solid #6c757d;
+border-radius: 5px;
+margin: 60px 20%;
+
+}
+.mb-3{margin-top: 20px;}
+.mb-3:hover{color: #198754;
+
+.btn btn-primary{margin:20px auto;
+border-radius:5px;
+color:#6f42c1;}
+
+/* form end */
