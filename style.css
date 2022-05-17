@@ -6,7 +6,7 @@ align-items: center;
 padding: 10px;
 max-width: 100%;}
 
-.logo img{max-width:40px;  
+.logo img{max-width:20%;  
     margin-right:10px;
 }
 
@@ -31,18 +31,18 @@ text-transform: uppercase;
 }
 
 .href ul li a:hover{color: #0dcaf0;
-    transition: 5s;
+    transition:0.5s ease-in-out;
    }
 
-   /* .hamburger{display: block;
+   .hamburger{display: block;
     float: left;
     margin-left: 10px;
-cursor: pointer;} */
+cursor: pointer;}
 
 
 
-.ham div{background-color:#20c997;
-    font-size: 20px;
+.hamburger div{background-color:#20c997;
+    font-size: 40px;
     line-height: 20px;
 width: 15px;
 height: 5px;
@@ -52,22 +52,25 @@ display:none;
 }
 
 @media (max-width:1048px){
-    .logo img{max-width:20%;  
-        margin-right:10px;
+    .logo{
+        padding-left: 50px;
 
-}}
+}
 href ul{margin-right: 20px;}
 
 href a{font-size: 17px;}
-
+}
 
 @media (max-width:760px){
  .logo{margin-left: 20px;}
 
-    .href ul{
-        position: absolute;
+    .href{
+        position: fixed;
         right: 0;
+        width: 100%;
+        height: 100vh;
         top: 10px;
+        text-align: center;
         display:none;
         flex-direction: column;
         align-items: center;
@@ -87,20 +90,20 @@ href ul show{
     left: 0;
 }
 
-.ham div{background-color:#20c997;
-    font-size: 20px;
-    line-height: 20px;
-    float:center;
-    width: 15px;
-    height: 5px;
-    right: 200%;
-    cursor: pointer;
-    margin-right: 50px;
+.hamburger div{background-color:#20c997;
     display:block;
+    font-size: 20px;
+    line-height: 10px;
+    float:right;
+    width: 50%;
+    height: 5px;
+    top: 200%;
+    cursor: pointer;
+    margin-right: 30px;
+    
     }
     
-    .ham:hover{color: #0dcaf0;
-        border: none;
+    .hamburger div:hover{color: #6610f2;
     }
 }
 .nav-active{transform: translateX(0%);}
@@ -124,17 +127,33 @@ transform: rotate(-45deg translate(-5px, 6px))
 /* style navbar end*/
 
 /* body styling start */
-.container-style{background-color:#dc3545;}
 
-.source{max-width: 50%;
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
+.header{background-color: lightcoral;}
+
+.container-style{
+    animation-name:newAnime;
+    animation-duration: 0-5s;
+    position: relative;
+    background-image: url(BG.jpg);
+    background-size: cover;
+    max-width: 100%;
+    background-repeat: no-repeat;
     font-family:'Oswald';
-color: #198754;
-text-decoration: underline;
-margin: 50px auto;
-text-align: center;
+
+}
+
+@keyframes myAnime{
+}
+
+
+.source{max-width:50%;
+    font-size:40px;
+    font-weight:700;
+    text-transform:uppercase;
+color:#198754;
+text-decoration:underline;
+margin:50px auto;
+text-align:center;
 
 }
 .source:hover{color: #adb5bd;
@@ -146,17 +165,29 @@ text-align: center;
     color: #0d6efd;
 max-width: 80%;
 border: 2px solid #6c757d;
-border-radius: 5px;
+border-radius: 30px 0;
 margin: 60px 20%;
 
 }
 .mb-3{margin-top: 20px;}
-::placeholder{color:#cefe9e;}
 .mb-3:hover{color: #198754;}
 
-.btn btn-primary{border:20px auto;
-border-radius:3px;
-color:#6f42c1;
-}
+.container{margin-bottom: 20px;
+margin-left: auto;}
+
+::placeholder{color: #adb5bd;}
+
+.btn-primary{padding:10px 80px;
+border-radius:30px;
+font-size: 14px;
+margin: 20px auto;
+display: block;
+font-family:'Oswald'; 
+font-weight: 400;
+background-color:radial-gradient(#6610f2,#6f42c1);
+color:#fff;}
+
+.fa{color: #6c757d;
+font-size: 20px;}
 
 /* form end */

@@ -1,14 +1,4 @@
-// $(document).ready(funtion(){
-//    $(`#hamburger`).click(function(){
-//         $(`ul`).togleclass(`show`)
-//     });
-// });
-
-
-
-
-
-
+const hamburger =document.getElementsById(`hamburger`)
 
 
 
