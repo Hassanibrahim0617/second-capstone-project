@@ -201,7 +201,7 @@ nav {
   animation-name: newAnime;
   animation-duration: 0-5s;
   position: relative;
-  background-image: url(BG.jpg);
+  background-image: url(./BG.jpg);
   background-size: cover;
   max-width: 100%;
   background-repeat: no-repeat;
